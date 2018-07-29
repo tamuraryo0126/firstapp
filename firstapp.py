@@ -10,7 +10,7 @@ def index():
 def oshimen():
     return render_template("oshimen.html")
 
-@app.route("/oshimen/oshiinfo",methods=['POST','GET'])
+@app.route("/oshiinfo",methods=['POST','GET'])
 def oshimen_return():
     if request.method=='POST':
         name=request.form["name"]
@@ -22,4 +22,4 @@ def hello():
     return "Hello World" + val
 
 if __name__=="__main__":
-    app.run()
+    app.run(debug=True)
