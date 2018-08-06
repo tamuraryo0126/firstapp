@@ -4,13 +4,17 @@
         <meta charset="UTF-8">
         <title>First App by Ryo</title>
         <script src="firstapp.js"></script>
-        <link rel="styleseet" href="/static/firstapp.css">
-        <script type="text/javascript" src="/static/firstapp.js"></script>
+        <!-- <link rel="stylesheet" href="{{url_for('static', filename='test.css')}}"> -->
+        <link rel="stylesheet" href="../static/test.css?q=1422350253">
+        <script type="text/javascript" src="../static/firstapp.js"></script>
     </head>
     <body>
-        <h1><img src="http://livedoor.blogimg.jp/matomato455-keyaki46/imgs/8/8/881c9a1a.jpg"></h1>
-        <p>{{message}}</p>
-        <p>小坂菜緒ﾀﾞﾖ</p>
+        <h1>
+            <img src="http://livedoor.blogimg.jp/matomato455-keyaki46/imgs/8/8/881c9a1a.jpg">
+            <p>{{message}}</p>
+            <p>小坂菜緒</p>
+        </h1>
+        
         <a href="oshimen_search">推しメン検索ページ</a>
         <h2><img src="https://48pedia.org/images/a/af/2018%E5%B9%B4%E3%81%91%E3%82%84%E3%81%8D%E5%9D%8246%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB_%E5%B0%8F%E5%9D%82%E8%8F%9C%E7%B7%92_2.jpg"></h2>
     </body>
