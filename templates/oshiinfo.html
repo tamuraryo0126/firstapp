@@ -2,11 +2,21 @@
 <html>
     <head>
         <title>推しメン情報</title>
+        <!-- <script src="firstapp.js"></script> -->
     </head>
     <body>
-        <h1>あなたの推しメンは</h1>
     {% if name %}
-        <p>{{name}}</p>
+        <h1>あなたの推しメンは</h1>
+        <h2>
+            <p>{{name}}</p>
+            <img src="https://48pedia.org{{link}}">
+            <a href="https://48pedia.org/{{ name }}" target="blank">エケペディアへのリンク</a>
+        </h2>
     {% endif %}
+    {% if message %}
+        <p>{{message}}</p>
+    {% endif %}
+    <h1><a href="/">トップページ</a></h1>
+    <h1><a href="/oshimen_search">検索ページ</a></h1>
     </body>
 </html>
